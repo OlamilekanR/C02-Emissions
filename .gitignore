@@ -1,0 +1,202 @@
+# =====================================================================
+# PRODUCTION-GRADE .GITIGNORE
+# =====================================================================
+
+# 1. SECURITY, CREDENTIALS & SECRETS
+# ---------------------------------------------------------------------
+*.pem
+*.key
+*.ppk
+*.cert
+*.crt
+*.pfx
+*.p12
+*.cer
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+client_secret*.json
+credentials.json
+auth_token*
+*.kdbx
+*.ovpn
+
+# 2. ENVIRONMENT & LOCAL CONFIGURATION
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.defaults
+
+# Local IDE Workspaces & Editor Metadata
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+.fleet/
+.settings/
+
+# 3. DATABASES, STORAGE & RUNTIME LOGS
+# ---------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.ldb
+*.mdb
+*.accdb
+*.realm
+data/
+storage/
+*.sqlite-journal
+
+# Logs, PIDs, and Debug Outputs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+celerybeat-schedule
+celerybeat.pid
+*.pid
+*.seed
+*.pid.lock
+dump.rdb
+
+# 4. DEPENDENCY MANAGERS & VIRTUAL ENVIRONMENTS
+# ---------------------------------------------------------------------
+# Node.js
+node_modules/
+jspm_packages/
+web_modules/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+ENV/
+env/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Go / Rust / Java / PHP / Ruby
+vendor/
+bin/
+pkg/
+target/
+Cargo.lock
+.gradle/
+build/
+*.class
+*.jar
+*.war
+*.ear
+.bundle/
+
+# 5. BUILD OUTPUTS, BUNDLES & FRAMEWORK CACHES
+# ---------------------------------------------------------------------
+dist/
+out/
+public/build/
+.nuxt/
+.next/
+.output/
+.svelte-kit/
+.astro/
+.parcel-cache/
+.webpack/
+cache/
+.cache/
+server/
+compiled/
+*.tsbuildinfo
+
+# 6. CONTAINERS, INFRASTRUCTURE & ORCHESTRATION
+# ---------------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf.json
+override.tf
+errored.tfstate
+.ansible/
+docker-compose.override.yml
+
+# 7. TESTING, COVERAGE & PROFILING
+# ---------------------------------------------------------------------
+coverage/
+*.lcov
+.nyc_output/
+.tox/
+.nox/
+.ropeproject/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+profiling/
+htmlcov/
+.jest_cache/
+playwright-report/
+test-results/
+
+# 8. OPERATING SYSTEM & MACHINE JUNK
+# ---------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
