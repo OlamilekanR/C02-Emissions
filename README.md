@@ -4,8 +4,10 @@
 >>The readme is like the name read me !!!! meaning read me i know all. 
 
 
->> now i'll help you navigate this little energy data set.,
-**New here?** Start with `PROJECT_OVERVIEW.md` for what you're building and
+>> now i'll help you navigate this little energy data set.
+
+**New here?** 
+Start with `PROJECT_OVERVIEW.md` for what you're building and
 why. This file (`README.md`) is where the step-by-step setup lives — you're
 already in the right place.
 
